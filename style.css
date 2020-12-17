@@ -1,0 +1,371 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgba(4, 142, 206, 0.883); 
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: white ; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    min-height: 70px;
+    height: auto;
+    width: 100%;
+    background-color:var(--primary-color);
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* align-content: center; */
+}
+.navbar-list ul {
+    display: flex;
+   
+}
+.navbar-list ul li {
+    padding: 10px 15px ;
+}
+.navbar-list ul li:hover{
+   /* border-bottom: 2px solid white ; */
+}
+.navbar-list ul li a {
+    text-transform: uppercase;
+}
+.table-card{
+    display: none;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    position: absolute;
+    right: 45px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+    animation: topToBottom 2s;
+    z-index: 10;
+}
+.delete-course {
+   
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(194, 7, 7);
+    border-radius: 50%;
+    color: white;
+}
+
+table{
+   width: 100%;   
+}
+td img{
+    width: 100px;
+    height: 100px;
+}
+th{
+    color: black;
+    text-transform: capitalize;
+    padding: 10px;
+}
+thead{
+    padding: 10px;
+    margin: 10px 0px ;
+    /* height: 10%; */
+    /* background-color: rgb(255, 129, 129); */
+}
+tbody{
+    /* height: 90%; */
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ .carrito-vacio{
+
+    text-align: center;
+    background-color: rgb(4, 69, 75);
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+  margin: auto;
+  color: white;
+}
+
+/* showcase section */
+
+.showcase{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 20px;
+    /* z-index: 1; */
+   
+}
+.skey{
+ 
+    background-color: var(--primary-color);
+    background: white;
+    /* position: absolute; */
+    width: 100%;
+    transform: skewY(-3deg);
+    /* margin-bottom: 100px; */
+    /* z-index: 1; */
+}
+
+.showcase .description{
+  
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+    animation: leftToRight 3s ;
+}
+.description p{
+    width: 50%;
+    background-color: rgba(16, 21, 41, 0.664);
+    padding: 10px;
+    color: white ;
+}
+.showcase .pic{
+    width: 40%;  
+    margin: 0px auto;
+    animation: rightToLeft 3s ;
+  z-index: 2;
+    
+}
+.showcase .pic img{
+    /* margin-top: 20px; */
+}
+
+/* section course  */
+
+.courses{
+    margin: 10px 0px ;
+    overflow: hidden;
+    
+}
+.courses .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    /* grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr)); */
+    grid-gap: 20px ;
+    /* background-color: rgb(101, 141, 168); */
+    /* overflow: visible; */
+}
+.item{
+    /* padding: 5px; */
+ display: flex;
+ flex-flow: column wrap;
+ height: 320px;
+ background-color: rgb(21, 45, 65);
+ border-radius: 3px ;
+ overflow: hidden;
+}
+.item img{
+    height: 50%;
+}
+.item p , .item span, .item .author {
+    text-align: left;
+    padding-left: 10px ;
+    color: white;
+}
+.item .name{
+   
+    font-size: 20px ;
+    /* padding-top: 5px ; */
+}
+.item .author{
+    text-align: left;
+   text-transform: capitalize;
+   font-style: italic;
+   font-size: small;
+   /* padding: 5px 0px ; */
+}
+.item .price{
+   padding-top: 5px ;
+font-size: 25PX ;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 15px ;
+    width: 60%;
+    margin: auto;
+   text-align: center;
+   color: var(--primary-color);
+   cursor: pointer;
+   
+}
+.btn-card{
+    background-color: rgb(172, 2, 2);
+    color: white;
+    width: 90%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.btn-add-course{
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    transition: ease-in-out 0.5s ;
+    border: 2px solid white ;
+    margin: 10px 15px  ;
+}
+.btn-add-course:hover{
+    color: black;
+    background-color: #fff;
+}
+
+/* footer */
+footer{
+    background-color: rgb(21, 45, 65);
+    padding: 10px;
+    padding-bottom: 20px;
+
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(220px , 1fr));
+    grid-gap: 10px;
+}
+.box ul li{
+    margin: 8px 2px ;
+   
+}
+.box ul li a:hover {    
+    color: aqua;
+}
+.box select{
+    border: none;
+    outline: none;
+    width: 100px ;
+    height: 25px;
+    text-align: center;
+    /* border-radius: 3px ; */
+}
+
+@keyframes leftToRight{
+    0%{
+        transform: translateX(-200);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+@keyframes rightToLeft{
+    0%{
+        transform: translateX(-150px);
+      
+    }
+    100%{
+       
+        transform: translateX(0);
+
+    }
+}
+@keyframes topToBottom{
+    0%{
+        transform: translateY(-70px);
+        opacity: .5;
+      
+    }
+    100%{
+       opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+@media(max-width:430px){
+    .table-card{
+        width: 340px;
+        margin: auto;
+        right: 60px;
+    }
+    .container{
+        width: 98%;
+    }
+    .courses .container{
+      
+        grid-template-columns: 1fr;
+       
+    }
+    .logo{
+        width: 100%;
+    }
+    .navbar-list{
+        width: 100%;
+    }
+    .navbar-list ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-list > ul >li {
+        width: 50%;
+        /* display: block; */
+        padding: 15px 0px ;
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+    }
+    .navbar-list > ul:last-child{
+        border-bottom: none;
+    }
+    #card{
+        border-bottom: none;
+
+    }
+    .navbar .flex{
+      flex-direction: column;
+    }
+    .logo{
+      
+    }
+}
+@media(max-width:700px){
+    .container{
+        width: 95%;
+    }
+    .showcase{
+        grid-template-columns: 1fr;
+
+    }
+    .description p{
+        width: 80%;
+    }
+    .showcase .pic{
+        width: 60%;  
+    }
+    
+}

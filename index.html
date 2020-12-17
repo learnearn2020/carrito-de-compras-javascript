@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>course</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <div class="logo"><a href="index.html" class="logo">JHM Tech</a></div>
+        <div class="navbar-list">
+          <ul class="">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">courses</a></li>
+            <li><a href="index.html">contact</a></li>
+            <li id="card">
+              <a href="index.html">card</a>
+              <ul>
+                <li>
+                  <div class="table-card">
+                    <table class="card-list">
+                      <thead>
+                        <tr>
+                          <th>image</th>
+                          <th>name</th>
+                          <th>price</th>
+                          <th>Count</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <div class="carrito-vacio">Tu carrito está vacio...</div>
+                    <button class="btn btn-card delete-card">
+                      Delete Card
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- showcase -->
+    <div class="showcase">
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus
+          aut perspiciatis recusandae! At totam aspernatur similique pariatur
+          voluptates. Consequatur voluptas nihil quis inventore.
+        </p>
+      </div>
+      <div class="pic">
+        <img src="image/hilaire.png" alt="" />
+      </div>
+    </div>
+    <div class="skey"></div>
+    <!-- section of the course  -->
+    <section class="courses">
+      <div class="container" id="courses">
+        <div id="first" class="item">
+          <img src="image/1 (1).jpg" alt="" />
+          <p class="name">HTML & CSS 5</p>
+          <p class="author">Evens Pierre</p>
+          <span class="price">$10</span>
+          <a class="btn btn-add-course" data-id="1">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (3).jpg" alt="" />
+          <p class="name">Add Google</p>
+          <p class="author">Messeroux J. Hilaire</p>
+          <span class="price">$12</span>
+          <a class="btn btn-add-course" data-id="2">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (1).png" alt="" />
+          <p class="name">Instagram ADS</p>
+          <p class="author">JHM Technology</p>
+          <span class="price">$18</span>
+          <a class="btn btn-add-course" data-id="3">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (2).jpg" alt="" />
+          <p class="name">Photoshop 2020 para principante</p>
+          <p class="author">Luis Paulo</p>
+          <span class="price">$120</span>
+          <a class="btn btn-add-course" data-id="4">Add to Card</a>
+        </div>
+
+        <div id="first" class="item">
+          <img src="image/1 (1).jpg" alt="" />
+          <p class="name">Python & Django</p>
+          <p class="author">Evens Paul</p>
+          <span class="price">$20</span>
+          <a class="btn btn-add-course" data-id="5">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (3).jpg" alt="" />
+          <p class="name">Illustrator</p>
+          <p class="author">Messeroux J. Hilaire</p>
+          <span class="price">$220</span>
+          <a class="btn btn-add-course" data-id="6">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (1).png" alt="" />
+          <p class="name">Facbook ADS</p>
+          <p class="author">JHM Technology</p>
+          <span class="price">$60</span>
+          <a class="btn btn-add-course" data-id="7">Add to Card</a>
+        </div>
+        <div class="item">
+          <img src="image/1 (2).jpg" alt="" />
+          <p class="name">Word & Excel 2020</p>
+          <p class="author">Guy Charles</p>
+          <span class="price">$30</span>
+          <a class="btn btn-add-course" data-id="8">Add to Card</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="foot">
+      <div class="container">
+        <div class="box">
+          <ul>
+            <li><a href="#">JHM for Business</a></li>
+            <li><a href="#">Teach in JHM Technology</a></li>
+            <li><a href="#">Download the App</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul>
+            <li><a href="#">Job</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help & Asistence</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Popular course </a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <select name="language" id="">
+            <option value="">--select--</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Creole">Creole</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
