@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>sending mail</title>
+  </head>
+  <body>
+    <!-- <a href="index.html">Go Back To Home</a> -->
+    <!-- <div class="navbar">
+      <div class="container flex">
+        <div class="logo"><a href="index.html" class="logo">JHM Tech</a></div>
+        <div class="navbar-list">
+          <ul class="">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">courses</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li id="card">
+              <a href="#">Cart</a>
+              <ul>
+                <li>
+                  <div class="table-card">
+                    <table class="card-list">
+                      <thead>
+                        <tr>
+                          <th>image</th>
+                          <th>name</th>
+                          <th>price</th>
+                          <th>Count</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <div class="carrito-vacio">Tu carrito está vacio...</div>
+                    <button class="btn btn-card delete-card">
+                      Delete Cart
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="form">
+        <div class="form-header">
+          <h3>Send New mail</h3>
+        </div>
+        <div class="form-content">
+          <form id="form" action="#" method="post">
+            <fieldset>
+              <label for="mail">mail</label>
+              <input type="email" name="email" id="email" placeholder="email" />
+            </fieldset>
+            <fieldset>
+              <label for="subject">subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="subject"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="message">message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="1"
+                placeholder="message"
+              ></textarea>
+            </fieldset>
+            <div id="spinner" class="spinner">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+            </div>
+            <fieldset class="action">
+              <input type="submit" class="btn btn-send" value="Send" />
+              <input type="reset" class="btn btn-reset" value="reset field" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>
